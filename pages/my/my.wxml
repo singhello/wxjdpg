@@ -1,0 +1,36 @@
+<!--pages/my/my.wxml-->
+<view class="body bg-white">
+  <view class="bg-gray" style="height: 10px;width: 100%;"></view>
+  <navigator url="/pages/my/personalData/personalData">
+    <view class="header-user">
+      <image class="userImg" mode="scaleToFill" src="{{userImg}}"></image>
+      <text class="user-name">{{userName}}</text>
+      <image class="icon_more" mode="scaleToFill" src="../../img/icon_more.png"></image>
+    </view>
+  </navigator>
+  <view class="bg-gray" style="height: 10px;width: 100%;"></view>
+  <navigator url="/pages/my/personalData/personalData">
+    <view class="myorder content">
+      <text style="font-weight:bold">我的订单</text>
+      <view class="watchall">
+        <text>查看全部</text>
+        <image class="icon_more" mode="scaleToFill" src="../../img/icon_more.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <view class="bg-gray" style="height: 10px;width: 100%;"></view>
+  <navigator url="/pages/my/personalData/personalData">
+    <view class="content">
+      <text>个人资料</text>
+      <image class="icon_more" mode="scaleToFill" src="../../img/icon_more.png"></image>
+    </view>
+  </navigator>
+  <view class="bg-gray" style="height: 10px;width: 100%;"></view>
+  <navigator url="/pages/my/share/share">
+    <view class="content" style="border-bottom: 1px solid #e4e4e4;">
+      <text>分享</text>
+      <image class="icon_more" mode="scaleToFill" src="../../img/icon_more.png"></image>
+    </view>
+  </navigator>
+</view>
+

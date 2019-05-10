@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.baseUrl = "http://localhost:8899/wx";
+var api = {
+    scan: exports.baseUrl + "/scan",
+};
+exports.default = api;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBpLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQWEsUUFBQSxPQUFPLEdBQVUsMEJBQTBCLENBQUM7QUFFekQsSUFBTSxHQUFHLEdBQUc7SUFFUixJQUFJLEVBQUUsZUFBTyxHQUFDLE9BQU87Q0FDeEIsQ0FBQTtBQUNELGtCQUFlLEdBQUcsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBiYXNlVXJsOlN0cmluZyA9IFwiaHR0cDovL2xvY2FsaG9zdDo4ODk5L3d4XCI7XHJcblxyXG5jb25zdCBhcGkgPSB7XHJcbiAgICAvLyDmiavkuIDmiatcclxuICAgIHNjYW46IGJhc2VVcmwrXCIvc2NhblwiLFxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGFwaTsiXX0=

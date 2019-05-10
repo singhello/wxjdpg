@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<import src="/pages/template/list-template/list-template"></import>
+<view class="container">
+	<scroll-view>
+		<!-- 搜索框 -->
+		<view class="serchBox">
+			<input type="text" value="" class="serch" placeholder="扫一扫" bindtap="openScan" />
+		</view>
+		<!-- 上导航 -->
+		<view class="nav">
+			<view class="navItem {{iNow == item ? 'active' : ''}}" wx:for="{{navList}}" wx:key="{{item}}" bindtap="navChange" data-id="{{item}}">
+				{{item}}
+			</view>
+		</view>
+		<!-- 轮播图 -->
+		<view class="swipperBox">
+			<swiper
+				class="swipper"
+				indicator-dots="{{indicatorDots}}"
+				autoplay="{{autoplay}}"
+				interval="{{interval}}"
+				duration="{{duration}}"
+				circular="{{true}}"
+				>
+				<block wx:for="{{imgUrls}}" wx:key="item">
+					<swiper-item>
+						<image src="{{item}}" class="slide-image" width="355" height="150" />
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<!-- 菜单栏 -->
+		<view class="menu">
+			<view class="menuItem" wx:for="{{menuList}}" wx:key="item.name" bindtap="toDetail" data-id="{{item.name}}">
+				<image src="{{item.icon}}"></image>
+				<text>{{item.name}}</text>
+			</view>
+		</view>
+	</scroll-view>
+</view>
+<!-- 弹窗 （微信授权）  -->
+<view class="modal-bg" wx:if="{{isModalPromise}}">
+	<view class="modal modal-promise">
+		<view class="modal-head">微信登陆</view>
+		<view class="modal-body">
+			<view class="body-title alone">申请允许微信登陆</view>
+			<!-- <view class="body-title">申请获得以下权限</view>
+			<view class="body-list">获取你的公开信息（昵称、头像等）</view> -->
+		</view>
+		<view class="modal-footer">
+			<button class="bth" bindtap="modalCancel" hover-class="none">取消</button>
+			<button class="bth btn-green" open-type="getUserInfo" bindgetuserinfo="modalSure" hover-class="none">允许</button>
+		</view>
+	</view>
+</view>

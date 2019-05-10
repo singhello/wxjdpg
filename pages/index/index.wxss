@@ -1,0 +1,86 @@
+/**index.wxss**/
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+	color: #aaa;
+}
+
+.usermotto {
+	margin-top: 200px;
+}
+
+/** 获取登录权限 */
+@import '../../styleCommon/modal.wxss';
+
+/** 搜索框 */
+.serchBox{
+	height: 66rpx;
+	margin: 10rpx;
+	padding: 10rpx 30rpx;
+	background: #aaa;
+}
+.serchBox .serch{
+	background: #ccc;
+	height: 44rpx;
+	border-radius: 10rpx;
+	font-size: 24rpx;
+	padding: 6rpx 10rpx;
+}
+.swipperBox{
+	margin: 10rpx;
+}
+.swipperBox .swipper{
+	width: 100%;
+}.swipperBox .swipper image{
+	width: 100%;
+	height: 100%;
+}
+/** 导航栏 */
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav .navItem{
+	height: 60rpx;
+	padding: 4rpx 16rpx;
+}
+.nav .navItem.active{
+	color: red;
+	/* border-right: 2rpx solid #ccc; */
+	border-bottom: 6rpx solid #d00;
+}
+/** 菜单栏 */
+.menu{
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+}
+.menu .menuItem{
+	width: 20%;
+	height: 100rpx;
+	font-size: 26rpx;
+	/* vertical-align: middle; */
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu .menuItem image{
+	width: 48rpx;
+	height: 48rpx;
+}
+
+
